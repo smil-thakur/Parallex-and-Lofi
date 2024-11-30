@@ -1,5 +1,7 @@
 # Relaxing Nature Parallax with Lofi Beat
 
+![Screenshot 2024-12-01 at 4 33 34 AM](https://github.com/user-attachments/assets/b5003a37-ed05-45eb-be9e-3a1e0fb93b2e)
+
 Welcome to the **Relaxing Nature Parallax** website! This website is designed to offer a relaxing experience with beautiful nature-themed parallax effects and soothing lofi beats. Whether you're working, studying, or just need a peaceful environment, this website creates the perfect atmosphere.
 
 ## Features
