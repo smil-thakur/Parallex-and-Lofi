@@ -2,12 +2,7 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 let setAudio = 0;
-try {
-    setAudio = Number.parseInt(localStorage.getItem('audio'));
-}
-catch (err) {
-    setAudio = 0;
-}
+setAudio = Number.parseInt(localStorage.getItem('audio') ?? "0");
 if (setAudio) {
     const music = new Audio("../assets/music bg.mp3");
     music.play();

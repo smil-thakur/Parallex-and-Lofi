@@ -5,11 +5,9 @@ const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
 
 let setAudio = 0;
 
-try {
-    setAudio = Number.parseInt(localStorage.getItem('audio')!);
-} catch (err) {
-    setAudio = 0;
-}
+
+setAudio = Number.parseInt(localStorage.getItem('audio') ?? "0");
+
 
 
 if (setAudio) {

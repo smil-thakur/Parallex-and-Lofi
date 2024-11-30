@@ -13,11 +13,9 @@ let localNature = 3;
 
 
 
-try {
-    localNature = Number.parseInt(localStorage.getItem('nature')!);
-} catch (err) {
-    localNature = 3;
-}
+
+localNature = Number.parseInt(localStorage.getItem('nature') ?? "3");
+
 
 let nature = localNature;
 

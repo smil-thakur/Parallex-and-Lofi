@@ -3,12 +3,7 @@ const changeNatureBtn = document.getElementById("changeNatureButton");
 const fpsContainer = document.getElementById("fps");
 const audioInput = document.getElementById("audio");
 let localNature = 3;
-try {
-    localNature = Number.parseInt(localStorage.getItem('nature'));
-}
-catch (err) {
-    localNature = 3;
-}
+localNature = Number.parseInt(localStorage.getItem('nature') ?? "3");
 let nature = localNature;
 localStorage.setItem('nature', nature.toString());
 if (changeNatureBtn) {
