@@ -11,7 +11,7 @@ Welcome to the **Relaxing Nature Parallax** website! This website is designed to
 
 ## Demo
 
-You can view the demo of the website [here](#) (insert your link here).
+You can view the demo of the website [here](https://parallex-lofi.netlify.app/).
 
 ## Tech Stack
 
