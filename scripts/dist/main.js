@@ -16,11 +16,6 @@ if (changeNatureBtn) {
 }
 const music = new Audio("../assets/music bg.mp3");
 if (audioInput) {
-    audioInput.checked = false;
-    if (audioInput.checked) {
-        localStorage.setItem('audio', "1");
-        music.play();
-    }
     music.addEventListener("ended", () => {
         music.play();
     });
@@ -40,7 +35,7 @@ async function main() {
     const context = canvas.getContext("2d");
     context.imageSmoothingEnabled = false;
     let [layer1, layer2, layer3, layer4] = await Promise.all([
-        loadSprite(`../assets/natures/nature_1/1.png`),
+        loadSprite(`../assets/natures/nature_${nature}/1.png`),
         loadSprite(`../assets/natures/nature_${nature}/2.png`),
         loadSprite(`../assets/natures/nature_${nature}/3.png`),
         loadSprite(`../assets/natures/nature_${nature}/4.png`),

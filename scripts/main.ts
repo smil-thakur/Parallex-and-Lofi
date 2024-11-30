@@ -33,11 +33,6 @@ if (changeNatureBtn) {
 const music = new Audio("../assets/music bg.mp3");
 
 if (audioInput) {
-    audioInput.checked = false;
-    if (audioInput.checked) {
-        localStorage.setItem('audio', "1")
-        music.play();
-    }
     music.addEventListener("ended", () => {
         music.play();
     })
